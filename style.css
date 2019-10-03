@@ -60,7 +60,6 @@ li a:hover:not(.active) {
   color: white;
 } */
 /* End General Nav Bar */
-/* Begin Twitter Nav Bar */
 * {
   margin: 0;
   padding: 0;
@@ -69,9 +68,20 @@ li a:hover:not(.active) {
 body {
   margin-top: 10px;
   width: 100%;
+  background: lightgray;
 }
 
-nav.twitter {
+header {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+/* Begin Twitter Nav Bar */
+.twitter ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  background: white;
   width: 90;
   margin: auto;
   height: 46px;
@@ -80,12 +90,6 @@ nav.twitter {
   border-radius: 5px;
   color: rgba(117, 117, 117, 1);
   box-shadow: 5px 10px 20px -20px rgba(85, 172, 238, 1);
-}
-
-.twitter ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
 }
 
 .twitter li {
