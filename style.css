@@ -158,3 +158,72 @@ header {
 .facebook li:first-child {
   margin-right: 3px;
 }
+
+/* End Facebook navbar */
+/* Begin Github navbar */
+.github ul {
+  display: flex;
+  list-style-type: none;
+  background-color: #2B3137;
+  color: white;
+  align-items: center;
+  padding: 10px;
+}
+
+.github li:not(:last-child):not(:first-child):not(.github_pricing) {
+  margin-right: 10px;
+}
+
+.github li:first-child {
+  margin-right: 15px;
+}
+
+.github_pricing {
+  margin-right: auto;
+}
+
+.githubSearch {
+  --search_Color: #4a5259;
+  padding: 7px;
+  background-color: var(--search_Color);
+  border-radius: 5px;
+}
+
+.githubSearch input[type="text"] {
+  background-color: var(--search_Color);
+  color: lightgray;
+  border: none;
+}
+
+.github_signUp {
+  border-radius: 2px;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+/* End Github nav bar */
+/* Begin Medium nav bar */
+.medium ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  height: 46px;
+}
+
+.medium li:not(:first-child):not(:last-child) {
+  margin-right: 15px;
+}
+
+.Medium_logo {
+  margin-right: auto;
+}
+
+.photoCircle {
+  height: 40px;
+}
+
+.photoCircle img {
+  height: inherit;
+  width: auto;
+  border-radius: 50%;
+}
