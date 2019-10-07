@@ -219,11 +219,29 @@ header {
 }
 
 .photoCircle {
-  height: 40px;
+  height: 35px;
 }
 
 .photoCircle img {
   height: inherit;
   width: auto;
   border-radius: 50%;
+}
+
+.medium .upgrade {
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.medium {
+  width: 90%;
+  margin: auto;
+}
+
+.Medium_logo {
+  font-size: 2em;
+  font-weight: 600;
 }
