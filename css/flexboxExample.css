@@ -23,4 +23,43 @@ body {
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-rows: 60px 1fr 60px;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  grid-gap: 20px;
+}
+
+.sr-only {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+header {
+  grid-area: header;
+  background: orange;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+nav ul {
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
 }
