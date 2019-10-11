@@ -21,7 +21,7 @@
 }
 
 img {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 body {
@@ -69,7 +69,12 @@ footer {
   grid-area: footer;
 }
 
+nav {
+  height: 100%;
+}
+
 .main-nav {
+  height: 100%;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
@@ -95,4 +100,25 @@ footer {
 
 .last-item {
   margin-left: auto;
+}
+
+main>section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  position: relative;
+  background: pink;
+  text-align: center;
+}
+
+.textContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
