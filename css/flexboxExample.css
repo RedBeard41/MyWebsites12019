@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto|Roboto+Condensed&display=swap');
+
 :root {
   --primary1: #993F3B;
   --primary2: #520A06;
@@ -7,6 +9,9 @@
   --secondary22: #6F8E36;
   --textLight: white;
   --textDark: black;
+  --paragraphText: 'Roboto Condensed', sans-serif;
+  --headingText: Roboto, sans-serif;
+  --navigationText: Anton, sans-serif;
 }
 
 * {
@@ -30,11 +35,26 @@ body {
   grid-gap: 20px;
 }
 
-.sr-only {}
+body * {
+  font-family: var(--paragraphText);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headingText);
+}
+
+.sr-only {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
 header {
   grid-area: header;
-  background: orange;
+  background: var(--secondary11);
 }
 
 main {
@@ -47,4 +67,34 @@ aside {
 
 footer {
   grid-area: footer;
+}
+
+nav {
+  height: 100%;
+}
+
+.main-nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: capitalize;
+  color: var(--textLight);
+  font-family: var(--navigationText);
+}
+
+.asideList {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--secondary12);
+  color: var(--textLight);
 }
