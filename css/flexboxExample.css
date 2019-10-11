@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto|Roboto+Condensed&display=swap');
+
 :root {
   --primary1: #993F3B;
   --primary2: #520A06;
@@ -7,6 +9,9 @@
   --secondary22: #6F8E36;
   --textLight: white;
   --textDark: black;
+  --navigationFont: Anton, sans-serif;
+  --headingFont: Roboto, sans-serif;
+  --paragraphFont: 'Roboto Condensed', sans-serif;
 }
 
 * {
@@ -30,7 +35,22 @@ body {
   grid-gap: 20px;
 }
 
-.sr-only {}
+body p {
+  font-family: var(--paragraphFont);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headingFont);
+}
+
+.sr-only {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
 header {
   grid-area: header;
@@ -54,4 +74,25 @@ footer {
   justify-content: space-around;
   list-style-type: none;
   align-items: center;
+  color: var(--textLight);
+  font-family: var(--navigationFont);
+  font-size: 2em;
+}
+
+.main-nav a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-nav li:not(:nth-child(3)) {
+  margin-right: 10px;
+}
+
+.main-nav li:first-child {
+  margin-left: 10px;
+}
+
+.last-item {
+  margin-left: auto;
 }
