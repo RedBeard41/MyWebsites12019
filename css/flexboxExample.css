@@ -30,14 +30,7 @@ body {
   grid-gap: 20px;
 }
 
-.sr-only {
-  position: absolute;
-  top: auto;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
+.sr-only {}
 
 header {
   grid-area: header;
@@ -54,12 +47,4 @@ aside {
 
 footer {
   grid-area: footer;
-}
-
-nav ul {
-  height: 60px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  list-style-type: none;
 }
